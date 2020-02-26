@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/marble"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/name_edit"
+        style="@style/NameStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/hint"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/done_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/berkshire_swash"
+        android:text="@string/done"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_edit" />
+
+    <TextView
+        android:id="@+id/name_text"
+        style="@style/NameStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#fafafa"
+        android:fontFamily="@font/berkshire_swash"
+        android:paddingBottom="8dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_edit" />
+
+    <TextView
+        android:id="@+id/box_one"
+        android:tag="star-0-0"
+        style="@style/StarBox"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/box_two"
+        android:tag="star-0-1"
+        style="@style/StarBox"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintStart_toEndOf="@+id/box_one"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/box_four"
+        android:tag="star-0-3"
+        style="@style/StarBox"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintStart_toEndOf="@+id/box_three"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/box_three"
+        android:tag="star-0-2"
+        style="@style/StarBox"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintStart_toEndOf="@+id/box_two"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/box_five"
+        android:tag="star-0-4"
+        style="@style/StarBox"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/box_four"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/box_six"
+        android:tag="star-1-0"
+        style="@style/StarBox"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box_one" />
+
+    <TextView
+        android:id="@+id/box_seven"
+        android:tag="star-1-1"
+        style="@style/StarBox"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toEndOf="@+id/box_six"
+        app:layout_constraintTop_toBottomOf="@+id/box_two" />
+
+    <TextView
+        android:id="@+id/box_nine"
+        android:tag="star-1-3"
+        style="@style/StarBox"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toEndOf="@+id/box_eight"
+        app:layout_constraintTop_toBottomOf="@+id/box_four" />
+
+    <TextView
+        android:id="@+id/box_eight"
+        android:tag="star-1-2"
+        style="@style/StarBox"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toEndOf="@+id/box_seven"
+        app:layout_constraintTop_toBottomOf="@+id/box_three" />
+
+    <TextView
+        android:id="@+id/box_ten"
+        android:tag="star-1-4"
+        style="@style/StarBox"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/box_nine"
+        app:layout_constraintTop_toBottomOf="@+id/box_five" />
+
+    <TextView
+        android:id="@+id/box_eleven"
+        android:tag="star-2-0"
+        style="@style/StarBox"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box_six" />
+
+    <TextView
+        android:id="@+id/box_twelve"
+        android:tag="star-2-1"
+        style="@style/StarBox"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toEndOf="@+id/box_eleven"
+        app:layout_constraintTop_toBottomOf="@+id/box_seven" />
+
+    <TextView
+        android:id="@+id/box_fourteen"
+        android:tag="star-2-3"
+        style="@style/StarBox"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toEndOf="@+id/box_thirteen"
+        app:layout_constraintTop_toBottomOf="@+id/box_nine" />
+
+    <TextView
+        android:id="@+id/box_thirteen"
+        android:tag="star-2-2"
+        style="@style/StarBox"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toEndOf="@+id/box_twelve"
+        app:layout_constraintTop_toBottomOf="@+id/box_eight" />
+
+    <TextView
+        android:id="@+id/box_fifteen"
+        android:tag="star-2-4"
+        style="@style/StarBox"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/box_fourteen"
+        app:layout_constraintTop_toBottomOf="@+id/box_ten" />
+
+    <TextView
+        android:id="@+id/box_sixteen"
+        android:tag="star-3-0"
+        style="@style/StarBox"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box_eleven" />
+
+    <TextView
+        android:id="@+id/box_seventeen"
+        android:tag="star-3-1"
+        style="@style/StarBox"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toEndOf="@+id/box_sixteen"
+        app:layout_constraintTop_toBottomOf="@+id/box_twelve" />
+
+    <TextView
+        android:id="@+id/box_nineteen"
+        android:tag="star-3-3"
+        style="@style/StarBox"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toEndOf="@+id/box_eighteen"
+        app:layout_constraintTop_toBottomOf="@+id/box_fourteen" />
+
+    <TextView
+        android:id="@+id/box_eighteen"
+        android:tag="star-3-2"
+        style="@style/StarBox"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toEndOf="@+id/box_seventeen"
+        app:layout_constraintTop_toBottomOf="@+id/box_thirteen" />
+
+    <TextView
+        android:id="@+id/box_twenty"
+        android:tag="star-3-4"
+        style="@style/StarBox"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toEndOf="@+id/box_nineteen"
+        app:layout_constraintTop_toBottomOf="@+id/box_fifteen" />
+
+    <TextView
+        android:id="@+id/box_twenty_one"
+        android:tag="star-4-0"
+        style="@style/StarBox"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box_sixteen" />
+
+    <TextView
+        android:id="@+id/box_twenty_two"
+        android:tag="star-4-1"
+        style="@style/StarBox"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toEndOf="@id/box_twenty_one"
+        app:layout_constraintTop_toBottomOf="@+id/box_seventeen" />
+
+    <TextView
+        android:id="@+id/box_twenty_four"
+        android:tag="star-4-3"
+        style="@style/StarBox"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toEndOf="@+id/box_twenty_three"
+        app:layout_constraintTop_toBottomOf="@+id/box_nineteen" />
+
+    <TextView
+        android:id="@+id/box_twenty_three"
+        android:tag="star-4-2"
+        style="@style/StarBox"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toEndOf="@+id/box_twenty_two"
+        app:layout_constraintTop_toBottomOf="@+id/box_eighteen" />
+
+    <TextView
+        android:id="@+id/box_twenty_five"
+        android:tag="star-4-4"
+        style="@style/StarBox"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/box_twenty_four"
+        app:layout_constraintTop_toBottomOf="@+id/box_twenty" />
+
+    <LinearLayout
+        android:id="@+id/clicks"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/retry_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box_twenty_three"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/num_of_click_text"
+            style="@style/ClickStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clickText" />
+
+        <TextView
+            android:id="@+id/num_of_click"
+            style="@style/ClickStyle"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="@string/clickNum" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/retry_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/berkshire_swash"
+        android:text="@string/retry"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/congratulations"
+        style="@style/NameStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/congrats"
+        android:textSize="50sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/retry_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Find All the Heart Game</string>
+    <string name="hint">What is your name?</string>
+    <string name="done">Done</string>
+    <string name="clickText">Number of Click:</string>
+    <string name="clickNum">0</string>
+    <string name="retry">Retry</string>
+    <string name="congrats">Congratulations</string>
+</resources>
